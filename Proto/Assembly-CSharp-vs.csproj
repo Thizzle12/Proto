@@ -54,6 +54,7 @@
      <Compile Include="Assets\Parabox Primitives\MonoBehaviours\InteractiveCylinder.cs" />
      <Compile Include="Assets\Parabox Primitives\MonoBehaviours\InteractivePlane.cs" />
      <Compile Include="Assets\Parabox Primitives\MonoBehaviours\InteractivePrism.cs" />
+     <Compile Include="Assets\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\Camera.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
