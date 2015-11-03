@@ -4,10 +4,10 @@ using System.Collections;
 
 public class ScoreManager : MonoBehaviour
 {
-	public static int score = 1000;
+	public int score = 1000;
 //	private int time;
 	private bool done = false;
-	public int frames = 0;
+	public static int frames = 0;
 	Text text;
 	
 	
