@@ -4,10 +4,11 @@ using System.Collections;
 
 public class ScoreManager : MonoBehaviour
 {
-	public static int score = 1000;
+	public int score = 1000;
 //	private int time;
 	private bool done = false;
-	public int frames = 0;
+	public static int frames = 0;
+	public int updateSpeed = 2;
 	Text text;
 	
 	
@@ -20,11 +21,11 @@ public class ScoreManager : MonoBehaviour
 	{
 		if (!(score <= 0)) {
 			frames = Time.frameCount;
-			if ((frames % 2) == 0 && !done) {
+			if ((frames % updateSpeed) == 0 && !done) {
 				score--;
 				text.text = "Score: " + (score);
 				done = true;
-			} else if (!((frames % 2) == 0)) {
+			} else if (!((frames % updateSpeed) == 0)) {
 				done = false;
 			}
 		} else {
