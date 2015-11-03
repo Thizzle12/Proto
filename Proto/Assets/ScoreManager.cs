@@ -18,15 +18,19 @@ public class ScoreManager : MonoBehaviour
 
 	void Update ()
 	{
-		frames = Time.frameCount;
-		if ((frames % 2) == 0 && !done) {
-			score--;
-			text.text = "Score: " + (score);
-			done = true;
-			} else if(!((frames % 2) == 0)) {
+		if (!(score <= 0)) {
+			frames = Time.frameCount;
+			if ((frames % 2) == 0 && !done) {
+				score--;
+				text.text = "Score: " + (score);
+				done = true;
+			} else if (!((frames % 2) == 0)) {
 				done = false;
 			}
-
+		} else {
+			text.text = "Game over!";
+		}
+	
 		//time = (int)Time.time;
 		//if ((time % 2) == 0 && !done) {
 		//	score--;
