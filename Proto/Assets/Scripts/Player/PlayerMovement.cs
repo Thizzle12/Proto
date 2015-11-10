@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
+	private int count;
+
 	Vector3 movement;
 	public float speed = 5f;
 	Rigidbody playerRigidbody;
@@ -11,6 +13,9 @@ public class PlayerMovement : MonoBehaviour {
 	float startY;
 	public float jumpHeight = 3f;
 
+	void start(){
+		count = 0;
+	}
 	// Use this for initialization
 	void Awake () {
 		playerRigidbody = GetComponent<Rigidbody> ();
@@ -40,13 +45,21 @@ public class PlayerMovement : MonoBehaviour {
 
 
 		}
-
-
-
+		
 		movement = movement.normalized * speed * Time.deltaTime;
 
 		playerRigidbody.MovePosition (transform.position + movement);
-
-
+		
 	}
+
+	void OnTriggerEnter(Collider other) 
+	{
+		if (other.gameObject.CompareTag ("PickUp"))
+		{
+			other.gameObject.SetActive (false);
+			count += 1;
+			Debug.Log("PickUps collected: " + count);
+		}
+	}
+
 }
