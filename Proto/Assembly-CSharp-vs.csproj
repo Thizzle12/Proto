@@ -54,13 +54,13 @@
      <Compile Include="Assets\Parabox Primitives\MonoBehaviours\InteractiveCylinder.cs" />
      <Compile Include="Assets\Parabox Primitives\MonoBehaviours\InteractivePlane.cs" />
      <Compile Include="Assets\Parabox Primitives\MonoBehaviours\InteractivePrism.cs" />
-     <Compile Include="Assets\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\Camera.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Goal.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\ScoreManager.cs" />
      <None Include="Assets\Parabox Primitives\README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
