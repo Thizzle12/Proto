@@ -5,7 +5,7 @@ using System.Collections;
 public class PlayerHealth : MonoBehaviour {
 
 	public int startHealth = 3;
-	public int currentHealth;
+	public int currentHealth = 3;
 	public Image heart1;
 	public Image heart2;
 	public Image heart3;
@@ -13,10 +13,10 @@ public class PlayerHealth : MonoBehaviour {
 
 	bool isDead;
 	bool damaged;
-	PlayerMovement pMove;
+	PlayerController pMove;
 	// Use this for initialization
 	void Start () {
-		pMove = GetComponent<PlayerMovement> ();
+		pMove = GetComponent<PlayerController> ();
 		currentHealth = startHealth;
 	}
 	

@@ -12,7 +12,7 @@ public class EnemyAttack : MonoBehaviour {
 
 
 	void Awake () {
-		player = GameObject.FindGameObjectWithTag ("Gamer");
+		player = GameObject.FindGameObjectWithTag ("Player");
 		playerHealth = player.GetComponent <PlayerHealth> ();
 	}
 

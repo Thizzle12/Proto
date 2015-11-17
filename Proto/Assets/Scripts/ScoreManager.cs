@@ -4,8 +4,8 @@ using System.Collections;
 
 public class ScoreManager : MonoBehaviour
 {
-	public PlayerHealth playerHealth;
-	public GameObject player;
+	 PlayerHealth playerHealth;
+	 GameObject player;
 
 	private bool gameover = false;
 	public int score = 1000;
@@ -19,7 +19,7 @@ public class ScoreManager : MonoBehaviour
 	void Awake ()
 	{
 		text = GetComponent <Text> ();
-		player = GameObject.FindGameObjectWithTag ("Gamer");
+		player = GameObject.FindGameObjectWithTag ("Player");
 		playerHealth = player.GetComponent<PlayerHealth> ();
 	}
 
